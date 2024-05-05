@@ -17,10 +17,10 @@ export class Sumadora {
                 this.resultado = this.numero1 + this.numero2;
                 break;
             case 2:
-                this.resultado = this.numero1 - this.numero2;
+                this.resultado = this.numero2 - this.numero1;
                 break;
             case 3:
-                this.resultado = this.numero1 / this.numero2;
+                this.resultado = this.numero2 / this.numero1;
                 break;
             case 4:
                 this.resultado = this.numero1 * this.numero2;
@@ -28,6 +28,21 @@ export class Sumadora {
             default:
                 this.resultado = 0;
         }
+        //this.numero2 = this.resultado;
+        //this.numero1 = 0;
     }
 
+    public concatenar(valor:number){
+        this.numero1 = this.numero1 *10 + parseInt(valor.toString());
+
+    }
+    public limpiar(){
+        this.numero1 = 0;
+
+    }
+    public realizarOperacion(operacion:number){
+        this.operacion = parseInt(operacion.toString());
+        this.numero2 = this.numero1;
+        this.limpiar();
+    }
 }
