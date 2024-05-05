@@ -28,8 +28,8 @@ export class Sumadora {
             default:
                 this.resultado = 0;
         }
-        //this.numero2 = this.resultado;
-        //this.numero1 = 0;
+        this.numero2 = this.resultado;
+        this.numero1 = 0;
     }
 
     public concatenar(valor:number){

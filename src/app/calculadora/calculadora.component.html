@@ -7,55 +7,65 @@
     <option value="4">*</option>
 </select>
 <input type="number" [(ngModel)]="this.sumadora.numero1">
-<input type="button"(click)="this.sumadora.calcular()" value="=">
-<b>{{this.sumadora.resultado}}</b>
+<input type="button" (click)="this.sumadora.calcular()" value="=">
+<input type="number" [(ngModel)]="this.sumadora.resultado">
 
-<div>
-    <input type="button" value="1" (click)="this.sumadora.concatenar(1)">
+<div class="container container-fluid text-center">
+    <div class="row">
+        <div class="col-xs-6 col-sm-6 col-md-3 offset-1">
+            <div class="row">
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="1" (click)="this.sumadora.concatenar(1)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="2" (click)="this.sumadora.concatenar(2)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="3" (click)="this.sumadora.concatenar(3)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-success btn-outline-dark" value="+" (click)="this.sumadora.realizarOperacion(1)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="4" (click)="this.sumadora.concatenar(4)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="5" (click)="this.sumadora.concatenar(5)">
+                </div>
+                <div class="col-3">
+                    <input type="button" class="btn completo btn-secondary btn-outline-dark" value="6" (click)="this.sumadora.concatenar(6)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-success btn-outline-dark" value="-" (click)="this.sumadora.realizarOperacion(2)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-secondary btn-outline-dark" value="7" (click)="this.sumadora.concatenar(7)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-secondary btn-outline-dark" value="8" (click)="this.sumadora.concatenar(8)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-secondary btn-outline-dark" value="9" (click)="this.sumadora.concatenar(9)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-success btn-outline-dark" value="/" (click)="this.sumadora.realizarOperacion(3)">
+                </div>
+                <div class="col-6">
+                    <input type="button"class="btn completo btn-secondary btn-outline-dark " value="0" (click)="this.sumadora.concatenar(0)">
+                </div>
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-danger btn-outline-dark" value="C" (click)="this.sumadora.limpiar()">
+                </div>
+                
+                
+                
+                <div class="col-3">
+                    <input type="button"class="btn completo btn-success btn-outline-dark" value="*" (click)="this.sumadora.realizarOperacion(4)">
+                </div>
+                <div class="col-12">
+                    <input type="button"class="btn completo btn-primary btn-outline-dark"  value="=" (click)="this.sumadora.calcular()">
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div>
-    <input type="button" value="2" (click)="this.sumadora.concatenar(2)">
-</div>
-<div>
-    <input type="button" value="3" (click)="this.sumadora.concatenar(3)">
-</div>
-<div>
-    <input type="button" value="4" (click)="this.sumadora.concatenar(4)">
-</div>
-<div>
-    <input type="button" value="5" (click)="this.sumadora.concatenar(5)">
-</div>
-<div>
-    <input type="button" value="6" (click)="this.sumadora.concatenar(6)">
-</div>
-<div>
-    <input type="button" value="7" (click)="this.sumadora.concatenar(7)">
-</div>
-<div>
-    <input type="button" value="8" (click)="this.sumadora.concatenar(8)">
-</div>
-<div>
-    <input type="button" value="9" (click)="this.sumadora.concatenar(9)">
-</div>
-<div>
-    <input type="button" value="0" (click)="this.sumadora.concatenar(0)">
-</div>
-<div>
-    <input type="button" value="C" (click)="this.sumadora.limpiar()">
-</div>
-<div>
-    <input type="button" value="+" (click)="this.sumadora.realizarOperacion(1)">
-</div>
-<div>
-    <input type="button" value="-" (click)="this.sumadora.realizarOperacion(2)">
-</div>
-<div>
-    <input type="button" value="/" (click)="this.sumadora.realizarOperacion(3)">
-</div>
-<div>
-    <input type="button" value="*" (click)="this.sumadora.realizarOperacion(4)">
-</div>
-<div>
-    <input type="button" value="=" (click)="this.sumadora.calcular()">
-</div>
-
